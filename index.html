@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUNÉ Banana Pudding</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FFF8F0;
+    color:#5C4B3B;
+    line-height:1.6;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+    background:white;
+    position:sticky;
+    top:0;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.logo{
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+    font-weight:700;
+    color:#D4B483;
+}
+
+nav a{
+    text-decoration:none;
+    color:#5C4B3B;
+    margin-left:25px;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 8%;
+    gap:50px;
+}
+
+.hero-text h1{
+    font-family:'Playfair Display',serif;
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:18px;
+    margin-bottom:30px;
+    max-width:550px;
+}
+
+.btn{
+    display:inline-block;
+    background:#D4B483;
+    color:white;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:50px;
+}
+
+.hero-image img{
+    width:450px;
+    border-radius:25px;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.about{
+    text-align:center;
+    max-width:900px;
+    margin:auto;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.feature-box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.product-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:25px;
+}
+
+.product-info h3{
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:24px;
+    color:#D4B483;
+    font-weight:600;
+    margin:15px 0;
+}
+
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.testimonial{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+}
+
+.cta{
+    text-align:center;
+    background:#F5EBDD;
+    border-radius:30px;
+}
+
+.cta h2{
+    font-family:'Playfair Display',serif;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding-top:50px;
+}
+
+.hero-text h1{
+    font-size:50px;
+}
+
+.hero-image img{
+    width:100%;
+}
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">LUNÉ 🌙</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#reviews">Reviews</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>LUNÉ Banana Pudding</h1>
+        <p>
+            Creamy Comfort in Every Spoon.
+            Nikmati perpaduan pisang segar, krim lembut,
+            dan biskuit yang disusun dalam setiap lapisan
+            untuk menciptakan dessert yang manis dan memuaskan.
+        </p>
+
+        <a href="https://wa.me/6281234567890" class="btn">
+            Order Now
+        </a>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800" alt="">
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About LUNÉ</h2>
+
+    <div class="about">
+        <p>
+            LUNÉ berasal dari kata "Lune" yang berarti bulan dalam bahasa Prancis.
+            Nama ini melambangkan kelembutan, kenyamanan, dan kehangatan yang dapat
+            dirasakan dalam setiap sendokan banana pudding.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Why Choose Us</h2>
+
+    <div class="features">
+
+        <div class="feature-box">
+            <h3>🍌 Fresh Banana</h3>
+            <p>Menggunakan pisang segar berkualitas.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>🍮 Creamy Texture</h3>
+            <p>Tekstur lembut dan rasa yang seimbang.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>✨ Premium Ingredients</h3>
+            <p>Dibuat dari bahan pilihan terbaik.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>🤍 Made With Love</h3>
+            <p>Setiap cup dibuat dengan perhatian penuh.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="products">
+    <h2 class="section-title">Our Signature Pudding</h2>
+
+    <div class="products">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800" alt="">
+            <div class="product-info">
+                <h3>Small Size</h3>
+                <p>Perfect for a sweet snack.</p>
+                <div class="price">Rp 15.000</div>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800" alt="">
+            <div class="product-info">
+                <h3>Large Size</h3>
+                <p>More layers, more happiness.</p>
+                <div class="price">Rp 25.000</div>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="reviews">
+    <h2 class="section-title">Customer Reviews</h2>
+
+    <div class="testimonials">
+
+        <div class="testimonial">
+            ⭐⭐⭐⭐⭐
+            <p>
+                Creamy banget dan manisnya pas!
+            </p>
+        </div>
+
+        <div class="testimonial">
+            ⭐⭐⭐⭐⭐
+            <p>
+                Pisangnya fresh dan bikin nagih.
+            </p>
+        </div>
+
+        <div class="testimonial">
+            ⭐⭐⭐⭐⭐
+            <p>
+                Cocok buat dessert setelah aktivitas seharian.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="cta">
+        <h2>Ready for Your Sweet Moment?</h2>
+        <p>
+            Nikmati kelembutan banana pudding dalam setiap sendokan.
+        </p>
+        <br>
+        <a href="https://wa.me/6281234567890" class="btn">
+            Order Now
+        </a>
+    </div>
+</section>
+
+<footer>
+    <h3>LUNÉ Banana Pudding 🌙</h3>
+    <p>Layers of Creamy Happiness.</p>
+</footer>
+
+</body>
+</html>
